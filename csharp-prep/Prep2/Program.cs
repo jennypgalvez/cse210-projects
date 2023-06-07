@@ -31,7 +31,28 @@ class Program
             letter = "F";
         }
 
-        Console.WriteLine($"Your grade is: {letter}. ");
+        string sign = "";
+        int calculateSign  = grade % 10;
+
+        if (calculateSign >= 7)
+        {
+            sign = "+";
+        }
+        else if (calculateSign < 3)
+        {
+            sign = "-";
+        }
+        else 
+        {
+            sign = "";
+        }
+        
+        if (grade >= 93 || grade < 60)
+        {
+            sign = "";
+        }
+
+        Console.WriteLine($"Your grade is: {letter}{sign}. ");
 
         if (grade >= 70)
         {
