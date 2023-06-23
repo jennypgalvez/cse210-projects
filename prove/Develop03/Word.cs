@@ -6,6 +6,7 @@ class Word
     public Word(string _text)
     {
         text = _text;
+        isHidden = false;
     }
 
     public void Hide()

@@ -8,7 +8,7 @@ class Reference
         book = _book;
         chapter = _chapter;
         verse = _verse;
-        endVerse = 0;
+        
     }
 
     public Reference(string _book, int _chapter, int _verseStart, int _verseEnd)

@@ -22,15 +22,13 @@ class Scripture
 
     public void HideRandomWords()
     {
-        List<Word> visibleWords = words.FindAll(w => !w.GetIsHidden());
+        List<Word> visibleWords = words.FindAll(word => !word.GetIsHidden());
 
-        if (visibleWords.Count == 0)
+        if (visibleWords.Count > 0)
         {
-            return;
-        }
-
-        int index = random.Next(0, visibleWords.Count);
-        visibleWords[index].Hide();
+            int randomIndex = random.Next(visibleWords.Count);
+            visibleWords[randomIndex].Hide();
+        } 
     }
 
     public string GetDisplayText()
@@ -53,15 +51,7 @@ class Scripture
 
     public bool IsCompletelyHidden()
     {
-        foreach (Word word in words)
-        {
-            if (!word.GetIsHidden())
-            {
-                return false;
-            }
-        }
-
-        return true;
+        return words.TrueForAll(word => word.GetIsHidden());
     }
 
 }
