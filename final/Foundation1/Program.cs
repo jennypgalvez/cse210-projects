@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        
         Video video1 = new Video("What Matters Most", "The church of Jesus Christ", 1.34);
         Video video2 = new Video("The Will of God", "The church of Jesus Christ", 3.02);
         Video video3 = new Video("The Hope of God's Light", "The church of Jesus Christ", 6.46);
