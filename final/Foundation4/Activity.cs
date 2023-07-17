@@ -32,7 +32,7 @@ public abstract class Activity
         summary += $"Pace: {GetPace():F1} {GetPaceUnit()}";
         return summary;
     }
-
+    
     protected abstract string GetDistanceUnit();
     protected abstract string GetSpeedUnit();
     protected abstract string GetPaceUnit();
