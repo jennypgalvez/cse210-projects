@@ -12,4 +12,5 @@ public class OutdoorGathering : Event
     {
         return $"{base.GetFullDetails()}\nWeather Forecast:{_weatherForecast}";
     }
+    
 }

@@ -31,7 +31,7 @@ class Program
         Console.WriteLine("\nReception - Short Description:");
         Console.WriteLine(reception.GetShortDescription());
 
-        Console.WriteLine("\nOutdoor Gathering - Standard Details:");
+        Console.WriteLine("\nOutdoor Gathering - Standard Details: ");
         Console.WriteLine(outdoorGathering.GetStandardDetails());
 
         Console.WriteLine("\nOutdoor Gathering - Full Details:");

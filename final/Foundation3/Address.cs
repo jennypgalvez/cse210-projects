@@ -12,7 +12,7 @@ public class Address
         this._state = state;
         this._country = country;
     }
-
+    
     public string GetAddress()
     {
         return $"{_street}, {_city}, {_state}, {_country} ";

@@ -14,4 +14,5 @@ public class Lecture: Event
     {
         return $"{base.GetFullDetails()}\nSpeaker: {_speaker}\nCapacity: {_capacity}";
     }
+    
 }

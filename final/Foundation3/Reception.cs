@@ -1,5 +1,6 @@
 public class Reception : Event
 {
+    
     private string _rsvpEmail;
 
     public Reception(string title, string description, DateTime date, TimeSpan time, Address address, string rsvpEmail)

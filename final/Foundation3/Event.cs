@@ -29,4 +29,5 @@ public class Event
     {
         return $"Type: {GetType().Name}\nTitle: {_title}\nDate: {_date.ToShortDateString()}";
     }
+    
 }
